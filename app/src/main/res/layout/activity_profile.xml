@@ -27,7 +27,7 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/bg_toolbar_header"
-                android:elevation="2dp"
+                android:elevation="0dp"
                 android:paddingHorizontal="5dp">
 
                 <ImageButton
@@ -54,6 +54,12 @@
                     android:textStyle="bold" />
 
             </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey_300"
+                android:elevation="1dp" />
 
             <!--Main contents-->
             <LinearLayout
@@ -225,8 +231,9 @@
                         android:background="@drawable/bg_simple_edittext"
                         android:hint="Your quotes..."
                         android:inputType="textMultiLine"
-                        android:lines="3"
+                        android:lines="1"
                         android:singleLine="false"
+                        android:textAlignment="textStart"
                         android:textColor="@color/grey_500"
                         android:textColorHint="@color/grey_700"
                         android:textStyle="italic" />
@@ -327,13 +334,14 @@
 
             </LinearLayout>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_save_setting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_margin="5dp"
                 android:background="@drawable/btn_primary"
-                android:text="Save Settings"
+                android:text="Update Profile"
                 android:textColor="@color/grey_500"
                 android:textStyle="bold" />
 

@@ -1,4 +1,4 @@
-package com.rscbyte.spendifylite;
+package com.rscbyte.homechurch;
 
 import org.junit.Test;
 

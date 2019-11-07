@@ -1,8 +1,6 @@
-package com.rscbyte.spendifylite;
+package com.rscbyte.homechurch;
 
-import android.Manifest;
 import android.app.Activity;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
@@ -13,8 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.databinding.DataBindingUtil;
 
-import com.rscbyte.spendifylite.Utils.Tools;
-import com.rscbyte.spendifylite.databinding.ActivityPermissionBinding;
+import com.rscbyte.homechurch.Utils.Tools;
+import com.rscbyte.homechurch.databinding.ActivityPermissionBinding;
 
 public class Permissions extends AppCompatActivity {
 
@@ -35,6 +33,7 @@ public class Permissions extends AppCompatActivity {
 
     // initialize controls
     public void initControls() {
+        Tools.setSystemBarLight(ctx);
         bdx.btnStartContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -1,4 +1,4 @@
-package com.rscbyte.spendifylite.Utils;
+package com.rscbyte.homechurch.Utils;
 
 public class MusicTools {
     public static final int MAX_PROGRESS = 10000;

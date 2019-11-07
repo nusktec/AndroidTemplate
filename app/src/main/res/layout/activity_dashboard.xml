@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <!--Data started-->
@@ -23,7 +22,7 @@
             android:layout_marginHorizontal="15dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/bg_toolbar_header"
-            android:elevation="2dp"
+            android:elevation="0dp"
             android:paddingHorizontal="5dp">
 
             <ImageButton
@@ -42,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="@string/spendify_mobile_lite"
+                android:text="@string/homechurch_mobile_lite"
                 android:textAllCaps="false"
                 android:textColor="@color/grey_500"
                 android:textSize="15sp"
@@ -56,11 +55,18 @@
                 android:layout_centerInParent="true"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:elevation="2dp"
-                android:src="@drawable/ic_more_vert"
+                android:src="@drawable/ic_apps"
                 android:tint="@color/grey_500" />
 
         </RelativeLayout>
         <!--Sub-mail container-->
+        <!--Divider line-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey_300"
+            android:elevation="1dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -74,23 +80,32 @@
                 android:layout_weight="1">
                 <!--child content one-->
 
-            </LinearLayout>
+                <!--Profile holder-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="4">
-                <!--child content two-->
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp">
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
         </LinearLayout>
         <!--Divider line-->
         <View
-            android:elevation="1dp"
-            android:background="@color/app_color_1_1_0"
             android:layout_width="match_parent"
-            android:layout_height="1dp" />
+            android:layout_height="1px"
+            android:background="@color/grey_300"
+            android:elevation="1dp" />
         <!--footer view-->
         <RelativeLayout
             android:layout_width="match_parent"

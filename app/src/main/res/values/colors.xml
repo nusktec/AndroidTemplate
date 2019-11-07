@@ -335,13 +335,13 @@
     </array>
 
     <!--Spendify Color-->
-    <color name="transparent">#0018ABDB</color>
-    <color name="app_color_1">#2A2E43</color>
-    <color name="app_color_1_1">#181A27</color>
-    <color name="app_color_1_1_0">#292D41</color>
+    <color name="transparent">#0D47A1</color>
+    <color name="app_color_1">#FFFFFF</color>
+    <color name="app_color_1_1">#0D47A1</color>
+    <color name="app_color_1_1_0">#0D47A1</color>
     <color name="app_color_2">#FFB900</color>
     <color name="app_color_2_1">#CE9603</color>
     <color name="app_color_3">#fbfcfe</color>
-    <color name="app_color_focus">#262A3D</color>
-    <color name="app_color_press">#24273A</color>
+    <color name="app_color_focus">#F5F5F5</color>
+    <color name="app_color_press">#E9E9E9</color>
 </resources>

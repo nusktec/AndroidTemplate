@@ -1,4 +1,4 @@
-package com.rscbyte.spendifylite.Utils;
+package com.rscbyte.homechurch.Utils;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

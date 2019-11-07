@@ -1,4 +1,4 @@
-package com.rscbyte.spendifylite;
+package com.rscbyte.homechurch;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.rscbyte.spendifylite", appContext.getPackageName());
+        assertEquals("com.rscbyte.homechurch", appContext.getPackageName());
     }
 }

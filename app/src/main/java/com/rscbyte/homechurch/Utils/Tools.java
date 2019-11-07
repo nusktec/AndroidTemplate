@@ -1,4 +1,4 @@
-package com.rscbyte.spendifylite.Utils;
+package com.rscbyte.homechurch.Utils;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -43,8 +43,8 @@ import androidx.core.content.ContextCompat;
 import androidx.core.widget.NestedScrollView;
 
 import com.google.android.gms.maps.GoogleMap;
-import com.rscbyte.spendifylite.R;
-import com.rscbyte.spendifylite.activities.Dashboard;
+import com.rscbyte.homechurch.R;
+import com.rscbyte.homechurch.activities.Dashboard;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;

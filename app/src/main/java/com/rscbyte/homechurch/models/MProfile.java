@@ -1,4 +1,4 @@
-package com.rscbyte.spendifylite.models;
+package com.rscbyte.homechurch.models;
 
 import com.orm.SugarRecord;
 import com.orm.dsl.Table;

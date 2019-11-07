@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.0"
     defaultConfig {
-        applicationId "com.rscbyte.spendifylite"
+        applicationId "com.rscbyte.homechurch"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -33,6 +33,9 @@ dependencies {
     implementation 'com.github.satyan:sugar:1.5' //SQLite ORM
     implementation 'com.airbnb.android:lottie:3.1.0' //Lottie files
     implementation 'com.facebook.shimmer:shimmer:0.5.0' //Shimmer
+    implementation 'com.squareup.retrofit2:retrofit:2.6.2' //Retrofit
+    implementation 'com.google.code.gson:gson:2.8.6' //Gson serializer
+    implementation 'de.hdodenhof:circleimageview:3.0.1' //circle image
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'

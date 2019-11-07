@@ -1,4 +1,4 @@
-package com.rscbyte.spendifylite;
+package com.rscbyte.homechurch;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -9,12 +9,11 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.orm.SugarContext;
-import com.rscbyte.spendifylite.Utils.Tools;
-import com.rscbyte.spendifylite.activities.Dashboard;
-import com.rscbyte.spendifylite.models.MProfile;
+import com.rscbyte.homechurch.Utils.Tools;
+import com.rscbyte.homechurch.activities.Dashboard;
+import com.rscbyte.homechurch.models.MProfile;
 
 public class SplashScreen extends AppCompatActivity {
     boolean firstCheck = false;
@@ -39,6 +38,8 @@ public class SplashScreen extends AppCompatActivity {
             String name = (MProfile.findById(MProfile.class, 1)).getNames();
             ((TextView) findViewById(R.id.txt_license)).setText(String.valueOf("licensed to " + name.toLowerCase()));
         }
+        //Set Tool bar
+        Tools.setSystemBarLight(this);
     }
 
     //launcher

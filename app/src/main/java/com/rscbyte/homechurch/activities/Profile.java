@@ -1,4 +1,4 @@
-package com.rscbyte.spendifylite.activities;
+package com.rscbyte.homechurch.activities;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -9,12 +9,11 @@ import android.widget.RadioGroup;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.orm.SugarContext;
 import com.orm.SugarRecord;
-import com.rscbyte.spendifylite.R;
-import com.rscbyte.spendifylite.Utils.Tools;
-import com.rscbyte.spendifylite.databinding.ActivityProfileBinding;
-import com.rscbyte.spendifylite.models.MProfile;
+import com.rscbyte.homechurch.R;
+import com.rscbyte.homechurch.Utils.Tools;
+import com.rscbyte.homechurch.databinding.ActivityProfileBinding;
+import com.rscbyte.homechurch.models.MProfile;
 
 public class Profile extends AppCompatActivity {
 
@@ -75,8 +74,9 @@ public class Profile extends AppCompatActivity {
     //set header and toolbar
     @SuppressLint("SetTextI18n")
     public void initToolBar() {
+        Tools.setSystemBarLight(ctx);
         Tools.setSystemBarColor(ctx, R.color.app_color_1);
-        bdx.toolbarTitle.setText("Account Settings");
+        bdx.toolbarTitle.setText("Profile Settings");
         //left btn initializer
         bdx.toolbarLeftBtn.setOnClickListener(new View.OnClickListener() {
             @Override

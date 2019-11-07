@@ -1,4 +1,4 @@
-package com.rscbyte.spendifylite.activities;
+package com.rscbyte.homechurch.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -8,9 +8,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.rscbyte.spendifylite.R;
-import com.rscbyte.spendifylite.Utils.Tools;
-import com.rscbyte.spendifylite.databinding.ActivityDashboardBinding;
+import com.rscbyte.homechurch.R;
+import com.rscbyte.homechurch.Utils.Tools;
+import com.rscbyte.homechurch.databinding.ActivityDashboardBinding;
 
 public class Dashboard extends AppCompatActivity {
 
@@ -34,6 +34,7 @@ public class Dashboard extends AppCompatActivity {
     //set header and toolbar
     public void initToolBar() {
         Tools.setSystemBarColor(ctx, R.color.app_color_1);
+        Tools.setSystemBarLight(ctx);
     }
 
     //components initializer
