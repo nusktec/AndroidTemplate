@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Data started-->
+    <data>
+
+    </data>
+
+    <!--Main layout begin-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_color_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_color_1"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".activities.SignIn">
+
+            <!--Formulate the header coat-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_toolbar_header"
+                android:elevation="0dp"
+                android:paddingHorizontal="5dp">
+
+                <ImageButton
+                    android:id="@+id/toolbar_leftBtn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:cropToPadding="true"
+                    android:elevation="2dp"
+                    android:src="@drawable/ic_close"
+                    android:tint="@color/grey_500" />
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/toolbar_title"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey_500"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/grey_200" />
+
+            <!--Main contents-->
+            <LinearLayout
+                android:id="@+id/profile_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="20dp"
+                android:elevation="0dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Sign In"
+                    android:textColor="@color/grey_600"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!--Children-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your email"
+                        android:textColor="@color/grey_500"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/txt_email"
+                        style="@style/EditText.GreySoft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_simple_edittext"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/grey_500"
+                        android:textColorHint="@color/grey_700" />
+
+                </LinearLayout>
+
+                <!--Email control-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textColor="@color/grey_500"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/txt_password"
+                        style="@style/EditText.GreySoft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_simple_edittext"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/grey_500"
+                        android:textColorHint="@color/grey_700" />
+
+                </LinearLayout>
+
+                <!--Gender control-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remember Me"
+                        android:textColor="@color/grey_500"
+                        android:textSize="13sp" />
+
+
+                    <Switch
+                        android:id="@+id/sw_remeber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text=""
+                        android:textColor="@color/grey_500" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/btn_rounded_white"
+                android:text="Sign In"
+                android:textColor="@color/light_white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account ?"
+                android:textColor="@color/grey_500"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/btn_create_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Now"
+                android:textColor="@color/grey_700"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="40dp"
+                android:text="@string/sotir_tech"
+                android:textAlignment="center"
+                android:textColor="@color/grey_300" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

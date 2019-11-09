@@ -13,16 +13,19 @@ import android.widget.TextView;
 import com.orm.SugarContext;
 import com.rscbyte.homechurch.Utils.Tools;
 import com.rscbyte.homechurch.activities.Dashboard;
+import com.rscbyte.homechurch.activities.SignIn;
 import com.rscbyte.homechurch.models.MProfile;
 
 public class SplashScreen extends AppCompatActivity {
     boolean firstCheck = false;
+    //expected permission
+    public static final String GALLERY_PERMISSIONS = Manifest.permission.READ_EXTERNAL_STORAGE;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        //initialize suger orm
+        //initialize sugar orm
         SugarContext.init(this);
         //set toolbar for mobile
         Tools.setSystemBarColor(this, R.color.app_color_1);
@@ -30,7 +33,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                checkPermission(Manifest.permission.READ_SMS);
+                checkPermission(GALLERY_PERMISSIONS);
             }
         }, 3000);
         //load license copy text
@@ -48,8 +51,15 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashScreen.this, Dashboard.class));
-                finish();
+                //redirect to login if not signed in
+                if (MProfile.count(MProfile.class) > 0) {
+                    startActivity(new Intent(SplashScreen.this, Dashboard.class));
+                    finish();
+                } else {
+                    //login details
+                    startActivity(new Intent(SplashScreen.this, SignIn.class));
+                    finish();
+                }
             }
         }, 3000);
     }
@@ -60,7 +70,7 @@ public class SplashScreen extends AppCompatActivity {
         if (ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_DENIED) {
             //Open permission screen
             firstCheck = true;
-            startActivity(new Intent(SplashScreen.this, Permissions.class).putExtra("permission", Manifest.permission.READ_SMS));
+            startActivity(new Intent(SplashScreen.this, Permissions.class).putExtra("permission", GALLERY_PERMISSIONS));
         } else {
             startMain();
         }

@@ -335,10 +335,10 @@
     </array>
 
     <!--Spendify Color-->
-    <color name="transparent">#0D47A1</color>
+    <color name="transparent">#707885</color>
     <color name="app_color_1">#FFFFFF</color>
-    <color name="app_color_1_1">#0D47A1</color>
-    <color name="app_color_1_1_0">#0D47A1</color>
+    <color name="app_color_1_1">#777E88</color>
+    <color name="app_color_1_1_0">#656B77</color>
     <color name="app_color_2">#FFB900</color>
     <color name="app_color_2_1">#CE9603</color>
     <color name="app_color_3">#fbfcfe</color>

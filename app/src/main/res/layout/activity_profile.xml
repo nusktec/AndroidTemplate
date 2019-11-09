@@ -57,9 +57,8 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:background="@color/grey_300"
-                android:elevation="1dp" />
+                android:layout_height="2px"
+                android:background="@color/grey_200" />
 
             <!--Main contents-->
             <LinearLayout
