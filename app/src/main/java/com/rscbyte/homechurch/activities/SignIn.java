@@ -30,14 +30,7 @@ public class SignIn extends AppCompatActivity {
     public void initToolBar() {
         Tools.setSystemBarLight(ctx);
         Tools.setSystemBarColor(ctx, R.color.app_color_1);
-        bdx.toolbarTitle.setText("Welcome !");
-        //left btn initializer
-        bdx.toolbarLeftBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        
     }
 
 }

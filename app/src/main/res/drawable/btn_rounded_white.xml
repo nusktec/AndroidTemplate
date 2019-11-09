@@ -5,11 +5,11 @@
         <layer-list>
             <item android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp">
                 <shape android:shape="rectangle">
-                    <corners android:bottomLeftRadius="30dp" android:bottomRightRadius="30dp" android:radius="60dp" android:topLeftRadius="30dp" android:topRightRadius="30dp" />
+                    <corners android:radius="3dp" />
                     <stroke android:width="2dp" android:color="@color/app_color_1_1" />
                     <solid android:color="@color/app_color_1_1_0" />
                     <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
-                    <size android:width="110dp" android:height="40dp" />
+                    <size android:width="110dp" android:height="30dp" />
                 </shape>
             </item>
         </layer-list>
@@ -20,11 +20,11 @@
         <layer-list>
             <item android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp">
                 <shape android:shape="rectangle">
-                    <corners android:bottomLeftRadius="30dp" android:bottomRightRadius="30dp" android:radius="60dp" android:topLeftRadius="30dp" android:topRightRadius="30dp" />
+                    <corners android:radius="3dp" />
                     <stroke android:width="2dp" android:color="@color/app_color_1_1" />
                     <solid android:color="@color/app_color_1_1" />
                     <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
-                    <size android:width="110dp" android:height="40dp" />
+                    <size android:width="110dp" android:height="30dp" />
                 </shape>
             </item>
         </layer-list>
@@ -36,11 +36,11 @@
         <layer-list>
             <item android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp">
                 <shape android:shape="rectangle">
-                    <corners android:bottomLeftRadius="30dp" android:bottomRightRadius="30dp" android:radius="60dp" android:topLeftRadius="30dp" android:topRightRadius="30dp" />
+                    <corners android:radius="3dp" />
                     <stroke android:width="2dp" android:color="@color/transparent" />
                     <solid android:color="@color/transparent" />
                     <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
-                    <size android:width="110dp" android:height="40dp" />
+                    <size android:width="110dp" android:height="30dp" />
                 </shape>
             </item>
         </layer-list>
