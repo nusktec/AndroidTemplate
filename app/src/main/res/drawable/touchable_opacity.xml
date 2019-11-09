@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:alpha="0.3" android:src="@color/grey_80" />
+    </item>
+</selector>
