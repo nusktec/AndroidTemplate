@@ -34,8 +34,11 @@ dependencies {
     implementation 'com.airbnb.android:lottie:3.1.0' //Lottie files
     implementation 'com.facebook.shimmer:shimmer:0.5.0' //Shimmer
     implementation 'com.squareup.retrofit2:retrofit:2.6.2' //Retrofit
-    implementation 'com.google.code.gson:gson:2.8.6' //Gson serializer
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0' //Gson serializer
     implementation 'de.hdodenhof:circleimageview:3.0.1' //circle image
+    implementation 'com.github.bumptech.glide:glide:4.10.0' //glide image
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.+' // image chooser
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0' //glide annotations
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
