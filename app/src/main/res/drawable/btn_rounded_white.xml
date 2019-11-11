@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+
+        <layer-list>
+            <item android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="3dp" />
+                    <stroke android:width="2dp" android:color="@color/app_color_1_1" />
+                    <solid android:color="@color/app_color_1_1_0" />
+                    <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+                    <size android:width="150dp" android:height="30dp" />
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+    <item android:state_focused="true">
+
+        <layer-list>
+            <item android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="3dp" />
+                    <stroke android:width="2dp" android:color="@color/app_color_1_1" />
+                    <solid android:color="@color/app_color_1_1" />
+                    <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+                    <size android:width="150dp" android:height="30dp" />
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+
+    <item>
+
+        <layer-list>
+            <item android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="3dp" />
+                    <stroke android:width="2dp" android:color="@color/transparent" />
+                    <solid android:color="@color/transparent" />
+                    <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+                    <size android:width="110dp" android:height="30dp" />
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+</selector>
