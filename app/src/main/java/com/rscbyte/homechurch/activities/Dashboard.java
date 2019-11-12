@@ -55,6 +55,8 @@ public class Dashboard extends AppCompatActivity {
             public void onClick(View view) {
                 CropImage.activity()
                         .setGuidelines(CropImageView.Guidelines.ON)
+                        .setActivityTitle("Profile Image")
+                        .setBackgroundColor(R.color.light_white)
                         .start(ctx);
             }
         });
@@ -68,6 +70,8 @@ public class Dashboard extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 Uri resultUri = result.getUri();
                 bdx.profileImg.setImageURI(resultUri);
+                //get bitmap from uri
+
             } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
                 Exception error = result.getError();
             }

@@ -37,7 +37,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.2.0' //Gson serializer
     implementation 'de.hdodenhof:circleimageview:3.0.1' //circle image
     implementation 'com.github.bumptech.glide:glide:4.10.0' //glide image
-    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.+' // image chooser
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0' // image chooser
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0' //glide annotations
 
     testImplementation 'junit:junit:4.12'

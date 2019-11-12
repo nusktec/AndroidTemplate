@@ -78,6 +78,6 @@ public class SplashScreen extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         if (firstCheck)
-            checkPermission(Manifest.permission.READ_SMS);
+            checkPermission(GALLERY_PERMISSIONS);
     }
 }

@@ -48,6 +48,7 @@ import com.rscbyte.homechurch.activities.Dashboard;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
@@ -531,6 +532,16 @@ public class Tools {
         return bitmap;
     }
 
+    public static Bitmap bitMapFromUri(Activity ctx, Uri uri) {
+        InputStream imageStream = null;
+        try {
+            imageStream = ctx.getContentResolver().openInputStream(uri);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return BitmapFactory.decodeStream(imageStream);
+    }
+
     //Circle image
     public static Bitmap getCircleImage(Bitmap bitmap) {
         try {
@@ -566,7 +577,7 @@ public class Tools {
         //Logic for platforms
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             final String noti_id = String.valueOf(id);
-            final CharSequence noti_name = "Spenify Alert";
+            final CharSequence noti_name = context.getResources().getString(R.string.app_name);
             final int noti_importance = NotificationManager.IMPORTANCE_HIGH;
 
             //Apply it to a channel
